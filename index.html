@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatBot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hamburger Button (visible on mobile) -->
+  <button class="hamburger" id="hamburger-button">&#9776;</button>
+
+  <!-- Sidebar with Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <button class="new-chat" id="new-chat">+ New Chat</button>
+    <p class="coming-soon">COMING SOON</p>
+    <footer class="footer">Made by Kaushik</footer>
+  </aside>
+
+  <!-- Main Chat Section -->
+  <main class="chat-main">
+    <header class="chat-header">
+      <h1 class="chat-title">My<span class="chat-title-green">ChatBot</span></h1>
+    </header>
+    
+    <!-- Chat Window (with reversed flex direction) -->
+    <div class="chat-window" id="chat-window">
+      <!-- Chat messages will appear here -->
+    </div>
+    
+    <!-- Typing Indicator -->
+    <div class="typing-indicator" id="typing-indicator" style="display: none;">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
+    <!-- Chat Form, positioned above the bottom -->
+    <form class="chat-form" id="chat-form">
+      <input type="text" id="message-input" placeholder="What do you want to know?" autocomplete="off" required />
+      <button type="button" id="mic-button">🎤</button>
+      <button type="submit" id="send-button">➤</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
