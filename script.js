@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch AI response using a backend API
     async function getAIResponse(userMessage) {
       try {
-        const response = await fetch('http://localhost:3000/chat', {
+        const response = await fetch('https://chatbotbckend.onrender.com/chat', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
