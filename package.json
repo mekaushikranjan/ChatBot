@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve -s .",
+    "build": "echo 'No build step required.'"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mekaushikranjan/ChatBot/issues"
   },
-  "homepage": "https://github.com/mekaushikranjan/ChatBot#readme"
+  "homepage": "https://github.com/mekaushikranjan/ChatBot#readme",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
 }
